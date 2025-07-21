@@ -49,7 +49,7 @@ $f(x_{3}, y_{3})=f(14,6)=58$
 <br>
 <br>
 <br>
-<br> when, starting point = (0,0), Learning rate = 0 %
+<br>
 
 #### Learning rate = 0 % ####
 
@@ -69,7 +69,7 @@ $f(x_{3}, y_{3})=f(0,0)=58$
 <br>
 <br>
 <br>
-<br> when, starting point = (0,0), Learning rate = $\frac{1}{3}$
+<br>
 
 #### Learning rate = 33.333... % ####
 
@@ -89,7 +89,7 @@ $f(x_{3}, y_{3})=f(\frac{161}{27},\frac{25}{9})=1.049...$
 <br>
 <br>
 <br>
-<br> when, starting point = (0,0), Learning rate = 0.5
+<br>
 
 #### Learning rate = 50% ####
 
