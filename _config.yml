@@ -8,7 +8,7 @@ version:          1.0
 gitbook_version:  3.2.3
 
 url:              'https://yudh-ds.github.io'
-baseurl:          '/yudh-ds.github.io'
+baseurl:          ''
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
@@ -61,7 +61,6 @@ ordered_collections:
   - others
   - posts
   - pages
-  - me
 
 page_width: 800px
 
