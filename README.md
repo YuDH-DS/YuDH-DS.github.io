@@ -2,12 +2,20 @@
 layout: home
 title: YuDH's tech-blog
 permalink: /
+cover: https://sighingnow.github.io/jekyll-gitbook/assets/dinosaur.gif
+
 ---
+
+<br>
+<br>
 
 ## Greetings ##
 
 Good to see you!
 <br> It's a data science tech-blog posting AI, DB, Sec
+<br>
+<br>
+<br>
 
 ## CV ##
 
@@ -39,7 +47,9 @@ Good to see you!
 **Career**
 <br>DataOne - DataAnalyst
 <br>서울시교육청 - EduTech
-
+<br>
+<br>
+<br>
 
 ## Contact ##
 <br>E-mail : c01lyu@snu.ac.kr
