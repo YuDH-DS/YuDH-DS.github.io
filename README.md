@@ -2,7 +2,7 @@
 layout: home
 title: YuDH's tech-blog
 permalink: /
-cover : https://img.eastspring.com/kr/images/librariesprovider6/2025-outlook/outlook_headerbanner_1.gif?sfvrsn=82ec037f_1
+cover : https://64.media.tumblr.com/c6872a0118e73908c8523fbafede158b/tumblr_oz3l83lbxW1vghtqoo1_540.gifv
 ---
 
 <br>
