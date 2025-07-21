@@ -1,13 +1,13 @@
 ---
 layout: home
-title: Home
+title: YuDH's tech-blog
 permalink: /
 ---
 
 ## Greetings ##
 
 Good to see you!
-<br> It's a data science tech-blog posting DB, AI
+<br> It's a data science tech-blog posting AI, DB, Sec
 
 ## CV ##
 
