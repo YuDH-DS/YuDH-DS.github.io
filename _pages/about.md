@@ -6,22 +6,22 @@ category: Jekyll
 layout: post
 ---
 
-Name
-Yu Donghwi
+**Name**<br>Yu Donghwi
 
-Bachelor's Degree
-Seoul National Univ.
 
-Master's Degree
-N/A
+**Bachelor's Degree**<br>Seoul National Univ.
 
-Certificate
-빅데이터분석기사(python)
-정보처리기사(java, c, python, sql)
-경영정보시각화능력(tableau)
-ADP
-ADsP
-SQLP
-SQLD
-워드프로세서 1급
-ITQ(한글,EXCEL, PPT)
+
+**Master's Degree**<br>N/A
+
+
+**Certificate**
+<br>빅데이터분석기사(python)
+<br>정보처리기사(java, c, python, sql)
+<br>경영정보시각화능력(tableau)
+<br>ADP
+<br>ADsP
+<br>SQLP
+<br>SQLD
+<br>워드프로세서 1급
+<br>ITQ(한글,EXCEL, PPT)
