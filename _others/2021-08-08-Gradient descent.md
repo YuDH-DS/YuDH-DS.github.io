@@ -7,10 +7,10 @@ layout: post
 ---
 
 ### 1. Definition ###
-
+ 
  딥러닝의 목표는 검증치와 손실(오차)을 최소화하는 예측치를 보여주는 최적의 모델을 찾는 것이다. 따라서 최소화 메커니즘은 DL 모델 성능을 결정짓는 가장 중요한 요소이며, 경사하강법(Gradient descent)는 그 중 가장 기초적인 메커니즘이다. DL 모델이 경사하강법을 채택할 경우 초기값에서 시작해 점차 경사를 감소시켜나가며 최소값을 탐색해 나가며, 이는 아래의 수식과 같다.(a=Learning rate)
 
-$$ x_{n} = x_{n-1} - a *  \partial f(x_{n-1}) $$
+$$ x_{n} = x_{n-1} - a \cdot \partial f(x_{n-1}) $$
 
 
 ### 2. Importance ### 
@@ -20,7 +20,23 @@ $$ x_{n} = x_{n-1} - a *  \partial f(x_{n-1}) $$
 ### 3. Example ###
 
 $$f(x,y) = (x-7)^2 + (y-3)^2$$ 
-$$Learning rate = 1$$
+<br> starting point = (0,0)
 
+$$\frac{\partial f(x,y)}{\partial x} = 2(x-7)$$
+
+$$\frac{\partial f(x,y)}{\partial y} = 2(y-3)$$
+
+<br> when, Learning rate = 100 %
+
+$$f(x_{0}, y_{0})$$=f(0,0)=58$$
+
+$$f(x_{1}, y_{1})$$=f(14,6)=58$$
+
+$$f(x_{2}, y_{2})$$=f(0,0)=58$$
+
+$$f(x_{3}, y_{3})$$=f(14,6)=58$$
 
 ### 4. Weakness ###
+
+
+### 5. Alternative ###
