@@ -28,6 +28,8 @@ $\frac{\partial f(x,y)}{\partial x} = 2(x-7)$
 $\frac{\partial f(x,y)}{\partial y} = 2(y-3)$
 
 <br> when, starting point = (0,0), Learning rate = 100 %
+<br>학습 속도를 높이기 위해 학습률을 100%까지 높이게 되면 지나친 과대적합의 문제가 발생하여 두 점 사이를 진동하며 최소값을 찾을 수 없음을 아래와 같이 확인할 수 있다.
+
 
 $f(x_{0}, y_{0})=f(0,0)=58$
 
@@ -40,12 +42,9 @@ $f(x_{3}, y_{3})=f(14,6)=58$
 <br>
 ...
 <br>
-![](https://github.com/user-attachments/assets/a392fdef-efc9-4421-818e-97f815801ed1)
-<br>
-![](https://github.com/user-attachments/assets/9e8829f0-4dd5-452d-a434-48234f536f73)
+![](https://github.com/user-attachments/assets/a392fdef-efc9-4421-818e-97f815801ed1) ![](https://github.com/user-attachments/assets/9e8829f0-4dd5-452d-a434-48234f536f73)
 <br>
 
-학습 속도를 높이기 위해 학습률을 100%까지 높인 결과 지나친 과대적합의 문제가 발생하여 두 점 사이를 진동하며 최소값을 찾지 못하고 있음을 알 수 있다.
 
 
 ### 4. Weakness ###
