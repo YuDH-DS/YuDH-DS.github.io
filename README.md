@@ -2,7 +2,7 @@
 layout: home
 title: YuDH's tech-blog
 permalink: /
-cover : https://v1.pinimg.com/videos/mc/720p/4e/07/bd/4e07bd7f8cb50146606049d5168e27e9.mp4
+cover : https://gist.github.com/krushndayshmookh/9fb70798bb71b38fd7ec9cee788b8c7c/raw/4d74ce241b1a24864bbf9ea1733f8f142490a5c6/bongo-cat.gif
 ---
 
 <br>
