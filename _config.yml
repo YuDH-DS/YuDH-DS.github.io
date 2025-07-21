@@ -58,12 +58,10 @@ collections:
     permalink: /:collection/:path/
 
 ordered_collections:
-  - site
-  - DB
-  - AI
-  - CS, Security
-  - me
-
+  - posts
+  - pages
+  - others
+  
 page_width: 800px
 
 destination:      ./_site
