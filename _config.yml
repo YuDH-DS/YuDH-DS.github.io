@@ -4,7 +4,7 @@ longtitle:        YuDH-DS
 author:           YuDH
 email:            c01lyu@snu.ac.kr
 description: >
-  Build Jekyll site with the GitBook style.
+
 
 version:          1.0
 gitbook_version:  3.2.3
