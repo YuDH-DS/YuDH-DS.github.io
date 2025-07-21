@@ -2,7 +2,7 @@
 layout: home
 title: YuDH's tech-blog
 permalink: /
-cover : https://64.media.tumblr.com/c6872a0118e73908c8523fbafede158b/tumblr_oz3l83lbxW1vghtqoo1_540.gifv
+cover : https://v1.pinimg.com/videos/mc/720p/4e/07/bd/4e07bd7f8cb50146606049d5168e27e9.mp4
 ---
 
 <br>
