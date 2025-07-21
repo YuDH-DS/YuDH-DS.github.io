@@ -6,7 +6,8 @@ description: > # this means to ignore newlines until "show_exerpts:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 show_excerpts: true # set to true to show excerpts on the homepage
-baseurl: ''
+remote_theme : samarsault/texture
+theme : texture
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -21,6 +22,7 @@ texture:
   style: blue
   showNav: false
   showPicker: true
+  disqus_shortname: games
 
   # generate social links in footer
   social_links:
@@ -42,5 +44,3 @@ plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
 
-remote_theme : samarsault/texture
-theme : texture
