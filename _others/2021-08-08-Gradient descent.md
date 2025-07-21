@@ -66,12 +66,12 @@ $f(x_{3}, y_{3})=f(0,0)=58$
 <br>
 ![](https://github.com/user-attachments/assets/5801ab94-3d5d-4a6c-bcca-4d261bd97ec0)
 
-#### Learning rate = 33.333... % ####
-
 <br>
 <br>
 <br>
 <br> when, starting point = (0,0), Learning rate = $\frac{1}{3}$
+
+#### Learning rate = 33.333... % ####
 
 과대적합을 피하기 위해 학습률을 낮추자 과소적합에 직면함을 확인했으므로 최적의 학습률을 찾기 위해 조금씩 학습률을 높이며 hyper-parameter tuning을 진행한다.
 
@@ -86,12 +86,12 @@ $f(x_{3}, y_{3})=f(\frac{161}{27},\frac{25}{9})=1.049...$
 <br>
 ![](https://github.com/user-attachments/assets/d3c17121-403b-47c3-851c-140548acd199)
 
-#### Learning rate = 50% ####
-
 <br>
 <br>
 <br>
 <br> when, starting point = (0,0), Learning rate = 0.5
+
+#### Learning rate = 50% ####
 
 학습률 33.333%는 수렴 속도가 다소 느려 학습률을 0.5까지 증가시킨 결과 한 번의 학습으로 최소값이 달성되었다. 따라서 초기점 (0,0)에서 최적의 학습률은 0.5임을 알 수 있다.
 
