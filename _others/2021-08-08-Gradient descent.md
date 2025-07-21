@@ -38,6 +38,7 @@ $f(x_{1}, y_{1})=f(14,6)=58$
 $f(x_{2}, y_{2})=f(0,0)=58$
 
 $f(x_{3}, y_{3})=f(14,6)=58$
+
 <br>
 ![](https://github.com/user-attachments/assets/155d5784-2e1b-4e7c-8653-02a11b7ce565)
 
@@ -55,6 +56,7 @@ $f(x_{1}, y_{1})=f(0,0)=58$
 $f(x_{2}, y_{2})=f(0,0)=58$
 
 $f(x_{3}, y_{3})=f(0,0)=58$
+
 <br>
 ![](https://github.com/user-attachments/assets/5801ab94-3d5d-4a6c-bcca-4d261bd97ec0)
 
@@ -73,6 +75,7 @@ $f(x_{1}, y_{1})=f(\frac{14}{3},2)=7.777...$
 $f(x_{2}, y_{2})=f(\frac{49}{9},\frac{8}{3})=2.530...$
 
 $f(x_{3}, y_{3})=f(\frac{161}{27},\frac{25}{9})=1.049...$
+
 <br>
 ![](https://github.com/user-attachments/assets/d3c17121-403b-47c3-851c-140548acd199)
 
@@ -94,5 +97,36 @@ $f(x_{1}, y_{1})=f(7,3)=0$
 
 ### 4. Weakness ###
 
+#### Local Minimum ####
+
+![](https://github.com/user-attachments/assets/9657102d-9c6b-42d0-a581-26818c2fd4de)
+
+예시로 살펴본 원형 함수의 예시는 초기점을 어디로 잡든 큰 문제가 발생하지 않는다. 그러나 극점을 갖는 함수의 경우 운이 나쁘게도 초기점의 위치에 따라 극점에 빠진 경우 경사하강법은 이를 최소점으로 인식하여 헤어나오지 못하는 문제가 발생한다.
+
+#### Saddle Point ####
+
+![](https://github.com/user-attachments/assets/c2e0acae-f579-4833-8dfb-3075789ed0bf)
+
+평면이 아닌 공간의 경우 평면에 접하는 안장점에 도달할 경우 경사가 0이 되어 경사하강법은 안장점에서 벗어나지 못하게 된다.
+
+
 
 ### 5. Alternative ###
+
+
+#### Adaptive Gradient descent ####
+
+
+
+
+#### Momentum Gradient descent ####
+
+이전 단계에서 감소하며 발생한 관성의 일정 비율을 학습률에 반영시켜 줄 경우 극소값에 도달하더라도 빠져나올 수 있게 되며 메커니즘은 아래와 같다.
+
+b : momentum rate
+
+$$ \Delta : 이전 단계 변화량 $$
+
+$$ x_{n} = x_{n-1} - \Delta_{n} $$
+
+$$ \Delta_{n} = b \cdot \Delta_{n1} + a \cdot \partial f(x_{n-1}) $$
