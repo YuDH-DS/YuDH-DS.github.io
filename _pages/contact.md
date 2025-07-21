@@ -1,9 +1,9 @@
 ---
 title: Contact
-author: Tao He
+author: Yu Donghwi
 date: 2022-02-05
 category: Jekyll
 layout: post
 ---
 
-This is an contact page.
+E-mail : c01lyu@snu.ac.kr

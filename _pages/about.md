@@ -1,5 +1,5 @@
 ---
-title: About
+title: CV
 author: Yu DH
 date: 2022-02-04
 category: Jekyll
@@ -25,3 +25,12 @@ layout: post
 <br>SQLD
 <br>워드프로세서 1급
 <br>ITQ(한글,EXCEL, PPT)
+
+
+**Academy**
+<br>SK Planet 빅데이터분석가 과정 9기
+
+
+**Career**
+<br>DataOne - DataAnalyst
+<br>서울시교육청 - EduTech
