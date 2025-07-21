@@ -42,5 +42,5 @@ plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
 
-remolte_theme : samarsault/texture
+remote_theme : samarsault/texture
 theme : texture
