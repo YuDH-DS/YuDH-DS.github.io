@@ -20,21 +20,24 @@ $$ x_{n} = x_{n-1} - a \cdot \partial f(x_{n-1}) $$
 ### 3. Example ###
 
 $$f(x,y) = (x-7)^2 + (y-3)^2$$ 
-<br> starting point = (0,0)
 
 $$\frac{\partial f(x,y)}{\partial x} = 2(x-7)$$
 
 $$\frac{\partial f(x,y)}{\partial y} = 2(y-3)$$
 
-<br> when, Learning rate = 100 %
+<br> when, starting point = (0,0), Learning rate = 100 %
 
-$$f(x_{0}, y_{0})$$=f(0,0)=58$$
+$f(x_{0}, y_{0})=f(0,0)=58$
 
-$$f(x_{1}, y_{1})$$=f(14,6)=58$$
+$f(x_{1}, y_{1})=f(14,6)=58$
 
-$$f(x_{2}, y_{2})$$=f(0,0)=58$$
+$f(x_{2}, y_{2})=f(0,0)=58$
 
-$$f(x_{3}, y_{3})$$=f(14,6)=58$$
+$f(x_{3}, y_{3})=f(14,6)=58$
+
+<br>
+학습 속도를 위해 학습률을 100% 높인 결과 지나친 과대적합의 문제가 발생하여 진동하며 최소값을 찾지 못하고 있음을 알 수 있다.
+
 
 ### 4. Weakness ###
 
