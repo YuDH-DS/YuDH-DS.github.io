@@ -2,8 +2,7 @@
 layout: home
 title: YuDH's tech-blog
 permalink: /
-cover: https://sighingnow.github.io/jekyll-gitbook/assets/dinosaur.gif
-
+cover : https://img.eastspring.com/kr/images/librariesprovider6/2025-outlook/outlook_headerbanner_1.gif?sfvrsn=82ec037f_1
 ---
 
 <br>
