@@ -1,10 +1,11 @@
 ---
 layout: home
-title: Jekyll Gitbook Theme
+title: Home
 permalink: /
 ---
 
-Make Jelly site have a GitBook look!
+Good to see you!
+<br> It's a data science tech-blog posting DB, AI
 
 
 
