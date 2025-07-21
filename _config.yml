@@ -59,7 +59,8 @@ ordered_collections:
   - others
   - posts
   - pages
-  
+  - me
+
 page_width: 800px
 
 destination:      ./_site
