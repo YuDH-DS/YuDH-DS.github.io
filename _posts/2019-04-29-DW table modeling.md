@@ -40,6 +40,6 @@ layout: post
 ![](https://github.com/user-attachments/assets/7c3eebae-18b8-4c1b-b75f-255456fc2fc4)
 
 
-### 4. Snowflake schema ###
+## 4. Snowflake schema ##
 
 ![](https://github.com/user-attachments/assets/c281d1c6-d6fe-404d-99b2-41b6443a3814)
