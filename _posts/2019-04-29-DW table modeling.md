@@ -20,18 +20,23 @@ layout: post
 
 ![](https://github.com/user-attachments/assets/ca8cb7fc-a94f-492c-8894-913fa87beeb5)
 
- 가장 기본적인 형태의 DW table model이다. 모든 attribute를 포함하고 있는 단일의 Fact table을 중심으로 Fact table의 각 column을 설명해주는 다수의 Dimensioanl table들이 join되어 있는 형태이다. 전통적인 DB에서도 다차원DB를 구현할 수 있으며 복잡도가 낮다는 장점이 있다. 그러나 Normalization(정규화)단계가 낮아 데이터의 중복이 많아 비효율적이다.
+ 가장 기본적인 형태의 DW table model이다. 모든 attribute를 포함하고 있는 단일의 Fact table을 중심으로 Fact table의 각 column을 설명해주는 다수의 Dimensioanl table들이 join되어 있는 형태이다. 전통적인 DB에서도 다차원DB를 구현할 수 있으며 복잡도가 낮다는 장점이 있다. 그러나 Normalization(정규화)단계가 낮으므로 데이터의 중복이 많아 비효율적이다.
 
 
 ## 3. Functional Dependency and Normalization ##
 
-### Partial Functional Dependency and 1NF ###
+### 1NF ###
 
 ![](https://github.com/user-attachments/assets/de7580e5-9d0d-49af-8bd3-e08abba074ca)
 
-### Full Functional Dependency and 2NF ###
+하나의 tuple이 특정 attribute key에 두 개 이상의 value를 할당 받은 경우 '원자성'에 반하며 중복이 발생한다. 따라서 위와 같이 원자성에 위배되는 tuple을 원자화하여 중복을 제거한 것을 1NF(1차 정규화)라고 한다.
+
+### Partial Functional Dependency and 2NF ###
 
 ![](https://github.com/user-attachments/assets/845a419b-fbe6-4d33-8e40-c0c29b0e7ee4)
+
+기본키는 모든 속성에 대한 결정자가 되어야 하며, 모든 속성은 기본키에 대한 종속되어야 한다. 그러나 기본키가 복합키인 경우 기본키를 구성하는 일부 속성 만으로도 결정지어지는 속성이 있는 경우가 있다. 위의 relation에서도 ('고객명', '서비스 이름')이 기본키이지만 '서비스 이용 기간'은 복합 키의 도움을 받지 않더라도 '서비스 이름'만으로도 결정지어진다. 이러한 경우를 특정 속성이 기본키의 부분에 종속되었다는 의미로 부분 함수 종속(Partial Functional Dependency)이라고 부르며 이렇게 기본키의 부분에 의해 종속되는 속성을 분리하는 것을 2NF(2차 정규화)라고 한다.
+
 
 ### Transitive Dependency Functional Dependency and 1NF ###
 
