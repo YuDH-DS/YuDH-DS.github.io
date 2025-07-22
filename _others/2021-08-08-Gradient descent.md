@@ -140,7 +140,7 @@ $$ m_{n} = b \cdot m_{n-1} + a \cdot \partial f(x_{n-1}) $$
 
 <br>
 
-$$ c = $\Sigma a \cdot f(x)$ $$
+$$ c = \Sigma a \cdot f(x) $$
 
 $$ x_{n} = x_{n-1} - \frac{a}{\sqrt{c} + \epsilon} \cdot f(x_{n-1}) $$
 
@@ -150,20 +150,24 @@ $$ x_{n} = x_{n-1} - \frac{a}{\sqrt{c} + \epsilon} \cdot f(x_{n-1}) $$
 Momentum Gradient descent는 극소점이나 안장점으로 부터 벗어날 수 있어 '방향' 상에서 이점을 가지고 있으나 누적된 관성이 '속력'을 지나치게 가속시킬 수 있다는 단점을 가지고 있다. 반면 Adaptive Gradient는 학습률을 떨어뜨리며 step-by-step 조금더 꼼꼼히 학습한다는 장점이 있다. 따라서 두 메커니즘을 혼합하여 '속도'를 통제하고자 고안된 메커니즘이 바로 Adam이며 구체적인 메커니즘은 아래와 같다.
 
 $m_{n}$ = 방향에 대한 momentum
+
 $v_{n}$ = 속력에 대한 momentum
+
 $b_{m}$ = 방향 관성 계수
+
 $b_{v}$ = 속력 관성 계수
+
 a = 학습률
 
 
-$m_{n} = b_{m} \cdot m_{n-1} + (1-b_{m})\cdot \partial f_{n}$
+$$m_{n} = b_{m} \cdot m_{n-1} + (1-b_{m})\cdot \partial f_{n}$$
 
-$v_{n} = b_{v} \cdot v_{n-1} + (1-b_{v})\cdot \partial f_{n}^2$
+$$v_{n} = b_{v} \cdot v_{n-1} + (1-b_{v})\cdot (\partial f_{n})^2$$
 
 
-$\hat{m_{n}} = \frac{m_{n}}{1-b_{m}}$
+$$\hat{m_{n}} = \frac{m_{n}}{1-b_{m}}$$
 
-$\hat{v_{n}} = \frac{v_{n}}{1-b_{v}}$
+$$\hat{v_{n}} = \frac{v_{n}}{1-b_{v}}$$
 
 
 $$x_{n} = x_{n-1} - a \cdot \frac{\hat{m_{n}}}{\sqrt{\hat{v_{n}}}+\epsilon}$$
