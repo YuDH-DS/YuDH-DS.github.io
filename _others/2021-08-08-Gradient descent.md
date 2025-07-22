@@ -157,6 +157,7 @@ a = 학습률
 
 
 $m_{n} = b_{m} \cdot m_{n-1} + (1-b_{m})\cdot \partial f_{n}$
+
 $v_{n} = b_{v} \cdot v_{n-1} + (1-b_{v})\cdot \partial f_{n}^2$
 
 
