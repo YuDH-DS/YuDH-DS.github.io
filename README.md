@@ -24,12 +24,11 @@ Good to see you!
 <br>빅데이터분석기사(python)
 <br>정보처리기사(java, c, python, sql)
 <br>경영정보시각화능력(tableau)
-<br>ADP
-<br>ADsP
-<br>SQLP
-<br>SQLD
-<br>워드프로세서 1급
-<br>ITQ(한글,EXCEL, PPT)
+<br>ADP(python)
+<br>ADsP(r)
+<br>SQLP(sql)
+<br>SQLD(sql)
+<br>OA(워드프로세서1급, ITQ 한글/PPT/Excel)
 
 
 **Academy**
