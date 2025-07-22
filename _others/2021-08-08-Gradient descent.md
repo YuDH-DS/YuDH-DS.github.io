@@ -167,6 +167,8 @@ $\hat{v_{n}} = \frac{v_{n}}{1-b_{v}}$
 
 $x_{n} = x_{n-1} - a \cdot \frac{\hat{m_{n}}}{\sqrt{\hat{v_{n}}}+\epsilon}$
 
+<br>
+<br>
 
 > ##### ETC
 >
