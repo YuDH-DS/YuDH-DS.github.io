@@ -168,9 +168,11 @@ $\hat{v_{n}} = \frac{v_{n}}{1-b_{v}}$
 $x_{n} = x_{n-1} - a \cdot \frac{\hat{m_{n}}}{\sqrt{\hat{v_{n}}}+\epsilon}$
 
 
-#### 5-4. ETC ####
+> ##### ETC
+>
+> 이 외에도 Sample을 여러 단위로 쪼개어 gradient를 도출한 후 각 batch의 발생확률에 근거한 경사의 평균을 구하여 다음 단계로 나아가는 SGD, 각 batch의 제곱 평균을 활용하는 RMSProp 등 다양한 gradient descent 메커니즘이 존재한다. 그러나 그 어떠한 메커니즘도 완벽하지 않기 때문에 DA와 DS는 현재의 상황에 맞는 메커니즘을 적절히 선택하는 것이 중요하다.
+{: .block-tip }
 
-이 외에도 Sample을 여러 단위로 쪼개어 gradient를 도출한 후 각 batch의 발생확률에 근거한 경사의 평균을 구하여 다음 단계로 나아가는 SGD, 각 batch의 제곱 평균을 활용하는 RMSProp 등 다양한 gradient descent 메커니즘이 존재한다. 그러나 그 어떠한 메커니즘도 완벽하지 않기 때문에 DA와 DS는 현재의 상황에 맞는 메커니즘을 적절히 선택하는 것이 중요하다.
 
 
 <br>
