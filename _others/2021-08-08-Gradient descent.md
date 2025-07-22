@@ -138,9 +138,9 @@ $$ m_{n} = b \cdot m_{n-1} + a \cdot \partial f(x_{n-1}) $$
 
 초기점을 잘못 잡은 경우 일부 변수는 과대적합되고 일부 변수는 과소적합 되는 불균형의 문제가 발생한다. 이를 방지하기 위해 누적된 경사 하강치만큼 학습률을 줄여주면 변수 간 학습 격차를 줄일 수 있다. 
 
-(c = $\Sigma a \cdot f(x)$ )
-
 <br>
+
+$$ c = $\Sigma a \cdot f(x)$ $$
 
 $$ x_{n} = x_{n-1} - \frac{a}{\sqrt{c} + \epsilon} \cdot f(x_{n-1}) $$
 
@@ -162,10 +162,11 @@ $v_{n} = b_{v} \cdot v_{n-1} + (1-b_{v})\cdot \partial f_{n}^2$
 
 
 $\hat{m_{n}} = \frac{m_{n}}{1-b_{m}}$
+
 $\hat{v_{n}} = \frac{v_{n}}{1-b_{v}}$
 
 
-$x_{n} = x_{n-1} - a \cdot \frac{\hat{m_{n}}}{\sqrt{\hat{v_{n}}}+\epsilon}$
+$$x_{n} = x_{n-1} - a \cdot \frac{\hat{m_{n}}}{\sqrt{\hat{v_{n}}}+\epsilon}$$
 
 <br>
 <br>
