@@ -186,20 +186,31 @@ $ starting \; point = (0,0), a = 0.75, b = 0.9, \epsilon = 0 $
 
 소수점 둘째자리까지 반올림
 
-$ black = Gradient \: descent, red = Momentum, blue = Adaptive $
+$ black = Gradient \; descent, red = Momentum, blue = Adaptive $
+
+<br>
+<br>
 
 black : (0, 0) -> first(10.5, 4.5) -> A(5.25, 2.25) -> B(7.88. 3.38)
 
 일반적인 Gradient descent는 진동하며 최저점을 찾아 나서는 모습을 보이고 있다.
 
+<br>
+<br>
+
 red : (0,0) -> first(10.5, 4.5) -> AA(-4.2, -1.8) -> BB(25.83, 11.07)
 
 Momentum gradient descent는 관성에 의해 점차 진동폭이 커지며 최저점에서 점점 이탈하고 있다. 원형 함수는 Local Minimum의 문제가 발생하지 않기 때문에 Momentum gradient는 적절하지 않은 메커니즘임을 확인할 수 있다.
+
+<br>
+<br>
 
 blue : (0,0) -> first(10.5, 4.5) -> AAA(8.88, 3.49) -> BBB(5.89, 1.75)
 
 Adaptive gradient descent는 starting point에서 x의 경사에 따른 변화가 y의 경사에 따른 변화보다 크다고 판단하여 y에 대한 변화폭을 늘리면서 올바른 최소점을 찾아가는 경로에서 이탈하는 모습을 보여주고 있다.  
 
+<br>
+<br>
 
 > ##### ETC
 >

@@ -81,3 +81,7 @@ Star schema의 Dimensional table 들은 필연적으로 이행 함수 종속성(
 
 Snowflake schema는 데이터 중복을 줄어들며 적재 시 시간이 단축된다는 장점이 있으나 join되는 relation의 개수가 증가하여 복잡성이 증가한다는 단점이 있다. Star schema와 Snowflake schema는 결국 단순화를 통해 DB의 성능을 향상시키고자 하는 '반정규화'와 중복을 제거하며 DB의 일관성과 무결성을 확보하고자 하는 '정규화' 사이의 딜레마의 문제를 대표한다고 볼 수 있다. 즉, 정답이 존재하지 않는 문제이며 DB Engineer는 주어진 상황을 고려하여 적절한 정규화 단계를 선택해 두 모델을 선택해야 할 것이다.
 
+<br>
+<br>
+<br>
+
