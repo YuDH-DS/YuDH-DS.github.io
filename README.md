@@ -5,7 +5,7 @@ permalink: /
 cover : https://github.com/user-attachments/assets/1b6f7493-d723-48b4-817d-29ad2ad2f55d
 ---
 Good to see you!
-<br> It's a data science tech-blog posting AI, DB, Sec
+<br> It's a data science tech-blog posting AI, DB, Sec, Statistics
 <br>
 <br>
 

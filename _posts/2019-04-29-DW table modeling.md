@@ -79,7 +79,7 @@ layout: post
 
 Star schema의 Dimensional table 들은 필연적으로 이행 함수 종속성(Transansitive functional dependency)의 문제에 직면할 수 밖에 없다. 왜냐하면 특정 차원에 대한 모든 정보를 한 곳에 모아두기 때문이다. 앞서 살펴본 Star schema의 'Store' 차원 테이블의 사례에서도 'Id'에 의해 결정되는 Store_Number가 다시 Store_Province와 Country를 종속하고 있으므로 Store table, Province table, Country table로 분리할 경우 중복을 제거할 수 있음을 확인할 수 있다. 따라서 위에 제시된 사례처럼 각 차원 테이블의 이행 함수 종속성을 제거하여 3NF로 분리시킨 DW table model을 Snowflake schema라고 한다. 
 
-Snowflake schema는 데이터 중복을 줄어들며 적재 시 시간이 단축된다는 장점이 있으나 join되는 relation의 개수가 증가하여 복잡성이 증가한다는 단점이 있다. Star schema와 Snowflake schema는 결국 단순화를 통해 DB의 성능을 향상시키고자 하는 '반정규화'와 중복을 제거하며 DB의 일관성과 무결성을 확보하고자 하는 '정규화' 사이의 딜레마의 문제를 대표한다고 볼 수 있다. 즉, 정답이 존재하지 않는 문제이며 DB Engineer는 주어진 상황을 고려하여 적절한 정규화 단계를 선택해 두 모델을 선택해야 할 것이다.
+Snowflake schema는 데이터 중복을 줄여주며 data load 시간이 단축된다는 장점이 있으나 join되는 relation의 개수가 증가하여 복잡성이 증가한다는 단점이 있다. Star schema와 Snowflake schema는 결국 단순화를 통해 DB의 성능을 향상시키고자 하는 '반정규화'와 중복을 제거하며 DB의 일관성과 무결성을 확보하고자하는 '정규화' 사이의 trade-off를 대표한다고 볼 수 있다. 즉, 정답이 존재하지 않는 문제이며 DB Engineer는 주어진 상황을 고려하여 적절한 정규화 단계를 선택해 DW를 설계해야 할 것이다.
 
 <br>
 <br>
