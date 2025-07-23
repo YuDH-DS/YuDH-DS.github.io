@@ -23,7 +23,7 @@ $$ x_{n} = x_{n-1} - a \cdot f_{x}(x_{n-1}) $$
 
 $ f(x,y) = (x-7)^2 + (y-3)^2 $ 
 
-$ starting \: point = (0,0) $
+$ starting \; point = (0,0) $
 
 <br>
 
@@ -182,7 +182,7 @@ $$x_{n} = x_{n-1} - a \cdot \frac{\hat{m_{n}}}{\sqrt{\hat{v_{n}}}+\epsilon}$$
 
 $ f(x,y) = (x-7)^2 + (y-3)^2 $
 
-$ starting \: point = (0,0), a = 0.75, b = 0.9, \epsilon = 0 $
+$ starting \; point = (0,0), a = 0.75, b = 0.9, \epsilon = 0 $
 
 소수점 둘째자리까지 반올림
 
