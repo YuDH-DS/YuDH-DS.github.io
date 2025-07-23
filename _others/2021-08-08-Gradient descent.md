@@ -12,7 +12,7 @@ layout: post
  
  (a = Learning rate = 라그랑지안 승수)
 
-$$ x_{n} = x_{n-1} - a \cdot \partial f(x_{n-1}) $$
+$$ x_{n} = x_{n-1} - a \cdot f_{x}(x_{n-1}) $$
 
 
 ### 2. Importance ### 
@@ -21,9 +21,9 @@ $$ x_{n} = x_{n-1} - a \cdot \partial f(x_{n-1}) $$
 
 ### 3. Example ###
 
-$f(x,y) = (x-7)^2 + (y-3)^2$ 
+$ f(x,y) = (x-7)^2 + (y-3)^2 $ 
 
-$starting point = (0,0)$
+$ starting \quad point = (0,0) $
 
 <br>
 
@@ -73,7 +73,7 @@ $f(x_{3}, y_{3})=f(0,0)=58$
 
 #### Learning rate = 33.333... % ####
 
-과대적합을 피하기 위해 학습률을 낮추자 과소적합에 직면함을 확인했으므로 최적의 학습률을 찾기 위해 조금씩 학습률을 높이며 hyper-parameter tuning을 진행한다.
+과대적합을 피하기 위해 학습률을 낮추자 과소적합에 직면함을 확인했으므로 최적의 학습률을 찾기 위해 조금씩 학습률을 높이며 hyper-parameter tuning을 진행한다. 최저값 탐색 경로가 마치 웅덩이 속으로 굴러 떨어지는 돌의 움직임과 비슷하다.
 
 $f(x_{0}, y_{0})=f(0,0)=58$
 
@@ -131,7 +131,7 @@ $f(x_{1}, y_{1})=f(7,3)=0$
 
 $$ x_{n} = x_{n-1} - m_{n} $$
 
-$$ m_{n} = b \cdot m_{n-1} + a \cdot \partial f(x_{n-1}) $$
+$$ m_{n} = b \cdot m_{n-1} + a \cdot f_{x}(x_{n-1}) $$
 
 
 #### 5-2. Adaptive Gradient descent ####
@@ -140,7 +140,7 @@ $$ m_{n} = b \cdot m_{n-1} + a \cdot \partial f(x_{n-1}) $$
 
 <br>
 
-$$ c = \Sigma a \cdot f(x) $$
+$$ c = \sum_{i=1}^{n-2} a \cdot f_{x}(x) $$
 
 $$ x_{n} = x_{n-1} - \frac{a}{\sqrt{c} + \epsilon} \cdot f(x_{n-1}) $$
 
@@ -160,9 +160,9 @@ $b_{v}$ = 속력 관성 계수
 a = 학습률
 
 
-$$m_{n} = b_{m} \cdot m_{n-1} + (1-b_{m})\cdot \partial f_{n}$$
+$$m_{n} = b_{m} \cdot m_{n-1} + (1-b_{m})\cdot f_{x}(x_{n-1})$$
 
-$$v_{n} = b_{v} \cdot v_{n-1} + (1-b_{v})\cdot (\partial f_{n})^2$$
+$$v_{n} = b_{v} \cdot v_{n-1} + (1-b_{v})\cdot ( f_x{x_{n-1}})^2$$
 
 
 $$\hat{m_{n}} = \frac{m_{n}}{1-b_{m}}$$
@@ -172,8 +172,24 @@ $$\hat{v_{n}} = \frac{v_{n}}{1-b_{v}}$$
 
 $$x_{n} = x_{n-1} - a \cdot \frac{\hat{m_{n}}}{\sqrt{\hat{v_{n}}}+\epsilon}$$
 
-<br>
-<br>
+
+#### 5-4. 탐색 경로 비교 ####
+
+ 
+
+
+
+
+
+
+
+
+$ f(x,y) = (x-7)^2 + (y-3)^2 $
+
+$ starting \quad point = (0,0), a = 0.75, b = 0.9, \epslion = 0 $
+
+$ black = Gradient \quad descent, red = Momentum, blue = Adaptive, green = Adam $
+
 
 > ##### ETC
 >
