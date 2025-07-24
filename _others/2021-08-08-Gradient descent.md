@@ -8,16 +8,17 @@ layout: post
 
 ### 1. Definition ###
  
- 딥러닝의 목표는 검증치와 손실(오차)을 최소화하는 예측치를 보여주는 최적의 모델을 찾는 것이다. 따라서 최소화 메커니즘은 DL 모델 성능을 결정짓는 가장 중요한 요소이며, 경사하강법(Gradient descent)는 그 중 가장 기초적인 메커니즘이다. DL 모델이 경사하강법을 채택할 경우 초기값에서 시작해 점차 경사의 일정 비율만큼을 감소시키며 최소값을 탐색해 나간다. 그 메커니즘은 아래의 수식과 같다.
+ ML/DL은 다양한 모델을 활용에 데이터를 학습시켜 target의 수치 또는 분류를 예측한다. 그리고 검증치와 예측치 사이에 발생한 손실을 최소화하는 방안을 찾아가며 스스로 학습을 수행한다. 따라서 손실함수에 대한 최소화 메커니즘은 ML/DL 모델의 성능을 결정짓는 가장 중요한 요소이며, 그 최소화 메커니즘이 바로 경사하강법(Gradient descent)이다. ML/DL 모델은 지정된 초기값에서 시작해 점차 경사의 일정 비율만큼을 감소시키며 최소값을 탐색해 나가며 구체적인 메커니즘은 아래의 수식과 같다.
  
  (a = Learning rate = 라그랑지안 승수)
+ (f(x) = Loss function = 손실함수)
 
 $$ x_{n} = x_{n-1} - a \cdot f_{x}(x_{n-1}) $$
 
 
 ### 2. Importance ### 
 
- 어떠한 형태의 곡률을 가진 다변수 함수에도 적용될 수 있으므로 선형회귀분석의 MSE보다 높은 현실 설명력을 가진다. 또한 0~1 사이에서 학습률(Learning rate)을 조정하여 반비례 관계에 있는 학습 속도와 학습 정확도를 목적에 맞게 제어할 수 있다는 장점이 있다. 
+ 어떠한 형태의 곡률을 가진 다변수 함수에도 적용될 수 있으므로 단순한 MSE보다 높은 현실 설명력을 가진다. 또한 0~1 사이에서 학습률(Learning rate)을 조정하여 trade-off 관계에 있는 학습 속도와 학습 정확도를 목적에 맞게 제어할 수 있다는 장점이 있다. 
 
 ### 3. Example ###
 
@@ -173,6 +174,22 @@ $$\hat{v_{n}} = \frac{v_{n}}{1-b_{v}}$$
 $$x_{n} = x_{n-1} - a \cdot \frac{\hat{m_{n}}}{\sqrt{\hat{v_{n}}}+\epsilon}$$
 
 <br>
+<br>
+
+> ##### hyper-parameter tuning을 통한 adam 구현
+>
+> 아래와 같은 코딩으로 pytorch나 tensorflow를 통해 DL을 수행하지 않더라도 ML단계에서도 Adam을 적용할 수 있다.
+{: .block-tip }
+
+<br>
+
+```yaml
+sklearn.linear_model import SGDRegressor
+model = SGDRegressor(learning_rate = 'adaptive', momentum = 0.9, random_state=123)
+model.fit(x_tr, y_tr)
+pred = model.predict(x_val)
+```
+
 
 #### 5-4. 탐색 경로 비교 ####
 
