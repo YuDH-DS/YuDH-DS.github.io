@@ -37,15 +37,13 @@ $A = [ a \vert East, North, East, North, West, North, West, West, Null] $
 <br>
 <br>
 $R = [ r \vert 0, 0, 0, 0, -1, 0, 0, 5, Null ]$
-<br>
-$ \sum_{t=0}&{8}r_{t} = 4 $
 
 #### $\pi_{t}$ = 정책
 
 정책이란 Agent가 각 상태에서 취해야할 행동에 대한 집합이다. 강화 학습은 랜덤으로 초기 정책을 설정한 후 Agent가 환경과 상호작용하는 과정 속에서 정책을 수정해 나가며 보상의 총합을 극대화하는 정책을 찾는 것을 목표로한다. (b)가 첫 시행이라고 가정할 때 (b)에서 주어진 초기정책은 아래와 같다고 추론할 수 있다.
 <br>
 <br>
-$\pi_{(b)} = [East, North, East, North, West, North, West, West, West, ?, ?, ?, ...] $
+$\pi_{(b)} = [East, North, East, North, West, North, West, West, ?, ?, ?, ...] $
 
 #### $V_{s, \pi}$ = 상태가치함수
 
@@ -66,7 +64,7 @@ $ V_{s} = E[\sum_{n=t}^{n_{\infty}} (r_{n+1} \cdot \rho^{n}) \vert S_{t} = s] $
 상태행동가치함수란 현시점 현 상태에서 특정 행동을 취한($S_(t) = s, A_{t} = a$) 다음, 그 뒤부터 정책 $\pi$를 따랐을 때 환경으로부터 받게 될 누적 보상의 기대값을 의미한다. 즉, 현 상황에서 해당 행위를 행하는 것이 얼마나 좋은 선택지인지를 평가할 수 있는 도구가 되며 아래와 같이 표현할 수 있다.
 <br>
 <br>
-$Q_{s, a} = E[\sum_{n=t}^{n_{\infty}} (r_{n+1} \cdot \rho^{n}) \vert S_{t} = s, A_{t} = a]
+$Q_{s, a} = E[\sum_{n=t}^{n_{\infty}} (r_{n+1} \cdot \rho^{n}) \vert S_{t} = s, A_{t} = a] $
 
 
 # 1. Model based Reinforcement Learning
